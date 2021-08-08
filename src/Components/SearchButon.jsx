@@ -13,7 +13,8 @@ function SearchButon() {
        let data = await apiFetch()
        console.log(data);
       setcity(data.name);
-      let temperature = data.main.temp -272.15
+      const celcius_grade = -272.15
+      let temperature = data.main.temp +(celcius_grade)
       settemp(temperature + "°C")
        
        return data 
